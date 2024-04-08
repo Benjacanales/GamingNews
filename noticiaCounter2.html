@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>GAMINGNEWS</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Index.html"><img src="Img/Logo.png" alt="" width="40" ></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="Index.html">Inicio</a>
+              <li class="nav-item dropdown" style="margin-left: auto;">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Iniciar sesion</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Iniciar sesion</a></li>
+                  <li><a class="dropdown-item" href="registro.html">Crear cuenta</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+              <!-- END NAVBAR -->
+
+    <!-- CONTENIDO -->
+     <div class="bg-primary text-center">
+        <a class="" style="color: black;"  href="Index.html">volver a las noticias </a>
+     </div>
+     <div class="row my-5 text-center text-align">
+        <div class="col-md-12">
+            <h4>Eliminatorias del Major de Copenhague y predicciones para el Desafío Pick'Em</h4>
+            <img src="Img/cs2N2.png" width="1200">
+            
+            <p >La fase de eliminación del Major PGL Copenhague ha terminado y ya solo quedan ocho equipos compitiendo en el primer Major Championship de Counter‑Strike 2.
+
+                Enhorabuena a Team Spirit y MOUZ, que avanzan invictos tras terminar la ronda con un registro perfecto de 3‑0. Eternal Fire, Cloud9 y Team Vitality se clasificaron con una puntuación de 3‑1, mientras que Natus Vincere, G2 Esports y FaZe Clan tuvieron que luchar hasta el final y necesitaron las cinco partidas para avanzar a la siguiente fase con un resultado de 3‑2.
+                
+                Las partidas de las eliminatorias comienzan el jueves 28 de marzo en el Royal Arena de Copenhague (Dinamarca). ¡Haz tus predicciones para el Desafío Pick’Em antes de que comience la primera partida de las eliminatorias!
+                
+                Y no te olvides de que las pegatinas de los equipos y jugadores están ya disponibles, y el 50 % de los ingresos se destina a los jugadores, equipos y organizaciones que participan en el Major PGL Copenhague.
+                
+                ¡Buena suerte y que te diviertas!</p>
+        
+    </div>
+
+    <!-- END CONTENIDO -->
+      <!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form action="" method="get">
+                <div class="mb-3 mt-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="txtemail" placeholder="Enter email" name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="pwd" class="form-label">Contraseña:</label>
+                  <input type="password" class="form-control" id="txtpass" placeholder="Enter password" name="pswd">
+                </div>
+                <div class="form-check mb-3">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Recuerdame
+                  </label>
+                </div>
+              </form>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+          <button  type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <footer style="background-color: black; color: white; padding: 5px; margin-top: auto; text-align: center;" >
+    <div class="footer-container">
+        <p>&copy; 2024 GamingNews. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
