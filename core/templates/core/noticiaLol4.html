@@ -1,0 +1,82 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block principal %}
+
+<header class="py-5 border-bottom mb-4" style="background-image: url('../../static/core/Img/cs2.png');">
+    <div class="container">
+        <div class=" my-1"> 
+            <h3 class="fw-bolder" style="margin-left: 75px;">"Noticias de counter strike 2"</h3>
+        </div>
+    </div>
+</header>
+<!-- Page content-->
+<div class="container">
+    <div class="row">
+        <!-- Blog entries-->
+        <div class="col-lg-8">
+            <!-- Featured blog post-->
+            <div class="card mb-4">
+                <img class="card-img-top img-fluid" src="{% static 'core/img/cs2N1.png' %}">
+                <div class="card-body">
+                    <div class="small text-muted">noviembre 22, 2023</div>
+                    <h2 class="card-title">Domingo decisivo en copenhage</h2>
+                </div>
+            </div>
+            <div>
+                <p class="card-text">Las semifinales del Major de Copenhague nos trajeron a cuatro titanes de Counter‑Strike: FaZe Clan contra Team Vitality y Natus Vincere contra G2 Esports.
+ 
+                    ¡Y los semifinalistas no nos defraudaron! En ambos emparejamientos, hicieron falta los tres mapas para decidir el ganador, pero FaZe Clan y Natus Vincere resistieron hasta el último minuto y se verán las caras en la gran final del primer Major Championship de Counter‑Strike 2.
+                    
+                    La jornada decisiva del domingo comienza con la partida de exhibición a las 18:15, y la gran final comenzará a las 20:00 (hora peninsular en ambos casos).
+                    
+                    El Major está a punto de terminar, pero todavía puedes apoyar a tus equipos y jugadores favoritos. Los artículos del torneo están disponibles en el juego, y el 50 % de los ingresos se destina a los jugadores, equipos y organizaciones que participan en el Major PGL Copenhague. 
+                    
+                    ¡Hasta el domingo!</p>
+            </div>
+            <!-- Nested row for non-featured blog posts-->
+    
+        </div>
+        <!-- Side widgets-->
+        <div class="col-lg-4">
+            <!-- Search widget-->
+            <div class="card mb-4">
+                <div class="card-header">Search</div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                        <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Categories widget-->
+            <div class="card mb-4">
+                <div class="card-header">Categories</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!">Web Design</a></li>
+                                <li><a href="#!">HTML</a></li>
+                                <li><a href="#!">Freebies</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!">JavaScript</a></li>
+                                <li><a href="#!">CSS</a></li>
+                                <li><a href="#!">Tutorials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Side widget-->
+            <div class="card mb-4">
+                <div class="card-header">Side Widget</div>
+                <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,103 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block principal %}
+
+<header class="py-5 border-bottom mb-4" style="background-image: url('../../static/core/Img/logolol.png');">
+    <div class="container">
+        <div class=" my-1"> 
+            <h3 class="fw-bolder" style="margin-left: 75px; color: aqua;">"Noticias de League of legends"</h3>
+        </div>
+    </div>
+</header>
+<!-- Page content-->
+<div class="container">
+    <div class="row">
+        <!-- Blog entries-->
+        <div class="col-lg-8">
+            <!-- Featured blog post-->
+            <div class="card mb-4">
+                <a href="{% url 'noticiaLol1' %}"><img class="card-img-top" src="../../static/core/Img/LLA_CoStreamers_GranFinal_1600x900.jpg" alt="..." /></a>
+                <div class="card-body">
+                    <div class="small text-muted">Noviembre 22, 2023</div>
+                    <h2 class="card-title">Domingo decisivo en copenhage</h2>
+                    <a class="btn btn-primary" href="{% url 'noticiaLol1' %}">Ver noticia...</a>
+                </div>
+            </div>
+            <!-- Nested row for non-featured blog posts-->
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Blog post-->
+                    <div class="card mb-4">
+                        <a href="{% url 'noticiaLol2' %}"><img class="card-img-top" src="../../static/core/Img/cs2N2.png" alt="..." /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">Diciembre 4, 2023</div>
+                            <h2 class="card-title h4">Eliminatorias del Major de Copenhague y predicciones para el Desafío Pick'Em</h2>
+                            <a class="btn btn-primary" href="{% url 'noticiaLol2' %}">Ver noticia...</a>
+                        </div>
+                    </div>
+                    <!-- Blog post-->
+                    <div class="card mb-4">
+                        <a href="{% url 'noticiaLol3' %}"><img class="card-img-top" src="../../static/core/Img/cs2N3.png" alt="..." /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">Diciembre 10, 2023</div>
+                            <h2 class="card-title h4">¡Pegatinas del PGL Copenhague 2024!</h2>
+                            <a class="btn btn-primary" href="{% url 'noticiaLol3' %}">Ver noticia...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Blog post-->
+                    <div class="card mb-4">
+                        <a href="{% url 'noticiaLol4' %}"><img class="card-img-top" src="../../static/core/Img/cs2N4.png" alt="..." /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">Diciembre 15, 2023</div>
+                            <h2 class="card-title h4">PGL Copenhague 2024</h2>
+                            <a class="btn btn-primary" href="{% url 'noticiaLol4' %}">Ver noticia...</a>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <!-- Side widgets-->
+        <div class="col-lg-4">
+            <!-- Search widget-->
+            <div class="card mb-4">
+                <div class="card-header">Search</div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                        <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Categories widget-->
+            <div class="card mb-4">
+                <div class="card-header">Categories</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!">Web Design</a></li>
+                                <li><a href="#!">HTML</a></li>
+                                <li><a href="#!">Freebies</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!">JavaScript</a></li>
+                                <li><a href="#!">CSS</a></li>
+                                <li><a href="#!">Tutorials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Side widget-->
+            <div class="card mb-4">
+                <div class="card-header">Side Widget</div>
+                <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

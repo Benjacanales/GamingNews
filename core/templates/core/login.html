@@ -1,0 +1,115 @@
+{% block principal %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iniciar sesión</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .login-container {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .login-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .login-form input[type="email"],
+    .login-form input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    .login-form input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .login-form input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    .register-link {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .register-link a {
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    .register-link a:hover {
+        text-decoration: underline;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Iniciar sesión</h2>
+    <form class="login-form" action="#" onsubmit="return validateForm()">
+        <input type="email" id="email" placeholder="Correo electrónico" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <input type="submit" value="Iniciar sesión">
+    </form>
+    <div class="register-link">
+        <p>No tienes cuenta? <a href="{% url 'loginRegistro' %}">Registrarme</a></p>
+    </div>
+</div>
+
+<script>
+    function validateForm() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        // Validar que el campo de correo electrónico no esté vacío
+        if (email.trim() === "") {
+            alert("Por favor ingresa tu correo electrónico.");
+            return false;
+        }
+
+        // Validar que el campo de contraseña no esté vacío
+        if (password.trim() === "") {
+            alert("Por favor ingresa tu contraseña.");
+            return false;
+        }
+
+        // Podrías agregar aquí más validaciones, como validar el formato del correo electrónico
+
+        return true; // Envía el formulario si todas las validaciones son exitosas
+    }
+</script>
+
+</body>
+</html>
+
+{% endblock %}

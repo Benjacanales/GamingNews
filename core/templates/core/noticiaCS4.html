@@ -1,0 +1,80 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block principal %}
+
+<header class="py-5 border-bottom mb-4" style="background-image: url('../../static/core/Img/cs2.png');">
+    <div class="container">
+        <div class=" my-1"> 
+            <h3 class="fw-bolder" style="margin-left: 75px;">"Noticias de counter strike 2"</h3>
+        </div>
+    </div>
+</header>
+<!-- Page content-->
+<div class="container">
+    <div class="row">
+        <!-- Blog entries-->
+        <div class="col-lg-8">
+            <!-- Featured blog post-->
+            <div class="card mb-4">
+                <img class="card-img-top img-fluid" src="{% static 'core/img/cs2N4.png' %}">
+                <div class="card-body">
+                    <div class="small text-muted">Diciembre 15, 2023</div>
+                    <h2 class="card-title">PGL Copenhague 2024</h2>
+                </div>
+            </div>
+            <div>
+                <p class="card-text">Hoy lanzamos el nuevo centro de contenido del Major de Copenhague, donde encontrarás el Desafío Pick'Em, el pase de espectador de Copenhague 2024, regalos y (muy pronto) pegatinas de los equipos y de los jugadores. El 50 % de los beneficios obtenidos con los artículos del torneo se reparte entre los jugadores y las organizaciones.
+
+                    Al jugar al Desafío Pick'Em con un pase activo, tendrás la oportunidad de mejorar tu moneda de Copenhague 2024 y de conseguir paquetes regalo adicionales. Además, aparecerás en la clasificación de pases activos, donde puedes comparar tus resultados en el Desafío Pick'Em con los de tus amigos.
+                                  
+                    Hasta ahora, era necesario un pase activo para jugar al desafío, ¡pero ya no! Ahora, quienes tengan estatus Prime pueden hacer predicciones gratis. Sin embargo, si quieres completar retos y ganar premios en cada fase del evento, tendrás que activar tu pase antes de que comience la fase correspondiente.
+                                  
+                    Así que haz tus predicciones y prepárate para animar a tus equipos favoritos. ¡Se acerca el Major PGL Copenhague 2024!</p>
+            </div>
+            <!-- Nested row for non-featured blog posts-->
+    
+        </div>
+        <!-- Side widgets-->
+        <div class="col-lg-4">
+            <!-- Search widget-->
+            <div class="card mb-4">
+                <div class="card-header">Search</div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                        <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Categories widget-->
+            <div class="card mb-4">
+                <div class="card-header">Categories</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!">Web Design</a></li>
+                                <li><a href="#!">HTML</a></li>
+                                <li><a href="#!">Freebies</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!">JavaScript</a></li>
+                                <li><a href="#!">CSS</a></li>
+                                <li><a href="#!">Tutorials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Side widget-->
+            <div class="card mb-4">
+                <div class="card-header">Side Widget</div>
+                <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
